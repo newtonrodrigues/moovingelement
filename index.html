@@ -1,12 +1,47 @@
 <html>
 <head>
-
+    <script src="javascript.js"></script>
 </head>
 <body>
-    Olá
 
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <div style="height: 200px; width: 200px; 
+                border: 2px red solid; top: 0px;
+                left: 0px; background-color: purple; 
+                position: absolute;" id="elemento">
+
+    </div>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+<button onclick="deslocarObjeto()">Velocidade: </button>
+<input type="text" id="velocidade"> <br><br>
+
+<button onclick="passo()">Passo: </button> 
+<input type="text" id="passo"> <br><br>
+
+<button onclick="start()">Start</button>
+<button onclick="dadosTela()">Largura e Altura</button>
+<br><br><br><br><br><br><br>
+
+
+
+
+
+<script language="javascript">{
+
+    
+    var posicao = 0   
+    var incremento = 10 
+    var elemento =  document.getElementById("elemento")
+    
+    var timer = setInterval(deslocarObjeto, 2000)
+
+}
+</script>
 
 </body>
-
-
 </html>
